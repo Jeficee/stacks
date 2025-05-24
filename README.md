@@ -20,7 +20,7 @@
     Title: <input type="text" name="title" required>
     Department: <input type="text" name="department" required><br><br>
     Date of Hire: <input type="date" name="hireDate" required><br><br>
-    Employment Status: <br>
+    Employment Status:<br>
     <input type="checkbox" name="status" value="Full Time"> Full Time
     <input type="checkbox" name="status" value="Part Time"> Part Time
     <input type="checkbox" name="status" value="Contractor"> Contractor
@@ -47,7 +47,8 @@
     Relationship: <input type="text" name="relationship" required><br><br>
 
     <p>Employee Signature</p>
-    <input type="text" name="signature"><input type="text" name="date"><br><br>
+    Signature: <input type="text" name="signature">
+    Date: <input type="text" name="date"><br><br>
 
     <input type="submit" value="Submit" style="background-color: lightblue;">
   </form>
@@ -55,6 +56,41 @@
   <script src="form.js"></script>
 </body>
 </html>
+
+
+document.getElementById("employeeForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const form = e.target;
+
+  const formData = {
+    fullName: form.fullName.value,
+    address: form.address.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    title: form.title.value,
+    department: form.department.value,
+    hireDate: form.hireDate.value,
+    status: Array.from(form.querySelectorAll('input[name="status"]:checked')).map(cb => cb.value),
+    otherStatus: form.otherStatus.value,
+    educationLevel: form.educationLevel.value,
+    institution: form.institution.value,
+    degree: form.degree.value,
+    major: form.major.value,
+    gradDate: form.gradDate.value,
+    licenses: form.licenses.value,
+    experience: form.experience.value,
+    emergencyName: form.emergencyName.value,
+    emergencyAddress: form.emergencyAddress.value,
+    emergencyPhone: form.emergencyPhone.value,
+    emergencyCell: form.emergencyCell.value,
+    relationship: form.relationship.value,
+    signature: form.signature.value,
+    date: form.date.value,
+  };
+
+  localStorage.setItem("employeeFormData", JSON.stringify(formData));
+  window.location.href = "submitted.html";
+});
 
 
 <!DOCTYPE html>
@@ -88,15 +124,15 @@
         <p><strong>Status:</strong> ${data.status.join(", ") || data.otherStatus}</p>
 
         <h3>Education</h3>
-        <p><strong>Education Level:</strong> ${data.educationLevel}</p>
+        <p><strong>Level:</strong> ${data.educationLevel}</p>
         <p><strong>Institution:</strong> ${data.institution}</p>
         <p><strong>Degree:</strong> ${data.degree}</p>
         <p><strong>Major:</strong> ${data.major}</p>
-        <p><strong>Graduation Date:</strong> ${data.gradDate}</p>
+        <p><strong>Graduation:</strong> ${data.gradDate}</p>
 
-        <h3>Professional Experience</h3>
+        <h3>Experience</h3>
         <p><strong>Licenses:</strong> ${data.licenses}</p>
-        <p><strong>Experience:</strong> ${data.experience}</p>
+        <p><strong>Work Experience:</strong> ${data.experience}</p>
 
         <h3>Emergency Contact</h3>
         <p><strong>Name:</strong> ${data.emergencyName}</p>
@@ -109,44 +145,8 @@
         <p>${data.signature} | ${data.date}</p>
       `;
     } else {
-      output.textContent = "No data found.";
+      output.innerHTML = "<p>No submitted data found.</p>";
     }
   </script>
 </body>
 </html>
-
-
-document.getElementById("employeeForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const form = e.target;
-  const formData = {
-    fullName: form.fullName.value,
-    address: form.address.value,
-    phone: form.phone.value,
-    email: form.email.value,
-    title: form.title.value,
-    department: form.department.value,
-    hireDate: form.hireDate.value,
-    status: Array.from(form.querySelectorAll('input[name="status"]:checked')).map(cb => cb.value),
-    otherStatus: form.otherStatus.value,
-    educationLevel: form.educationLevel.value,
-    institution: form.institution.value,
-    degree: form.degree.value,
-    major: form.major.value,
-    gradDate: form.gradDate.value,
-    licenses: form.licenses.value,
-    experience: form.experience.value,
-    emergencyName: form.emergencyName.value,
-    emergencyAddress: form.emergencyAddress.value,
-    emergencyPhone: form.emergencyPhone.value,
-    emergencyCell: form.emergencyCell.value,
-    relationship: form.relationship.value,
-    signature: form.signature.value,
-    date: form.date.value,
-  };
-
-  localStorage.setItem("employeeFormData", JSON.stringify(formData));
-  window.location.href = "submitted.html";
-});
-
