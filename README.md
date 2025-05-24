@@ -1,13 +1,9 @@
 <DOCTYPE! html>
 <html>
 <head>
-    <style>
-        h1 {
-        text-align: center;
-        }
-        </style>
-     <title>Employee Information Form</title>
-     <h1>EMPLOYEE INFORMATION FORM<hr></h1>
+    <link rel="stylesheet" href="form.css">
+    <title>Employee Information Form</title>
+    <h1>EMPLOYEE INFORMATION FORM<hr></h1>
 </head>
 <body>
 
@@ -24,7 +20,7 @@
         Title: <input type="text" required>
         Department: <input type="text" required><br>
         <br>
-        Date of Hire: <input type="text" required><br>
+        Date of Hire: <input type="date" required><br>
         <br>
         Employment Status: 
         <input type="checkbox">Full Time
@@ -40,13 +36,13 @@
         Degree Earned: <input type="text" required> <br>
         <br>
         Major/Field of Study: <input type="text" required>
-        Graduation Date: <input type="text" required> <br>
+        Graduation Date: <input type="date" required> <br>
         <br>
 
         <h3>Professional Experience</h3>
         Professional Experience and Licenses: <input type="text"><br>
         <br>
-        Previous Work Experience: <br><textarea name="textarea" rows="5" cols="40"></textarea><br>
+        Previous Work Experience: <br><textarea style="height: 150px; width: 300px;"></textarea><br>
         <br>
         
         <h3>Emergency Contact Information</h3>
@@ -59,7 +55,13 @@
         <br>
         Relationship: <input type="text" required><br>
         <br>
-        <input type="submit" value="Send" style="background-color: lightblue;">
+        <br>
+        <br>
+        <input type="text"> <input type="text">
+        <br>
+        <p>Employee Signature</p>
+        <br><br><input type="submit" value="Submit" style="background-color: lightblue;">
     </form>
+    <script src="form.js"></script>
 </body>
 </html>
