@@ -60,4 +60,22 @@
        <li>Teamwork</li>
        <li>Time Management</li>
        <li>Leadership</li>
-       <li
+       <li>Effective Communication</li>
+       <li>Critical Thinking</li>
+       <li>Investor</li>
+      </ul>
+     </section>
+     <section>
+      <h2 class="text-[#323c4f] font-semibold text-lg tracking-widest border-b border-[#323c4f] pb-1 mb-4">
+       LANGUAGES
+      </h2>
+      <ul class="list-disc list-inside text-sm text-[#323c4f] space-y-1">
+       <li>English (Basic)</li>
+       <li>Tagalog (Fluent)</li>
+      </ul>
+     </section>
+    </aside>
+    <section class="flex-1 p-6 md:p-10 text-[#323c4f]">
+     <div class="space-y-12">
+      <div class="relative pl-12">
+       <div class="absolute left-0 top-0 flex flex-col items-center">
