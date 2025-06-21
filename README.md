@@ -7,8 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
  </head>
- <body class="bg-[#f0f0f0]" style="font-family: 'Poppins', sans-serif;">
+ <body class="bg-[#f0f0f0]">
   <div class="max-w-5xl mx-auto bg-white shadow-md">
    <header class="bg-[#323c4f] text-white flex flex-col md:flex-row items-center md:items-center md:justify-between px-6 py-8 md:py-10">
     <div class="hidden md:block w-24 h-24 rounded-full overflow-hidden">
