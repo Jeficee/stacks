@@ -1,161 +1,340 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SnapEdit Pro - AI Photo Enhancer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f') center/cover no-repeat;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .pricing-card {
-      border-radius: 15px;
-      transition: transform 0.3s;
-    }
-    .pricing-card:hover {
-      transform: translateY(-10px);
-    }
-    .feature-icon {
-      font-size: 2rem;
-      color: #0d6efd;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Services - Pricing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header-section {
+            background-color: #ffffff;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        .hero-placeholder {
+            background-color: #d1d1d1;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .pricing-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #28a745; /* Green color for price */
+            margin-bottom: 20px;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .pricing-card ul li {
+            padding: 8px 0;
+            color: #666;
+            border-bottom: 1px dotted #e9ecef;
+        }
+        .pricing-card ul li:last-child {
+            border-bottom: none;
+        }
+        .pricing-card .btn-choose {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .pricing-card .btn-choose:hover {
+            background-color: #218838;
+        }
+        .contact-section {
+            background-color: #343a40; /* Dark background */
+            color: white;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+        .contact-section h2 {
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        .contact-icon-placeholder {
+            background-color: #555;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #bbb;
+        }
+        .contact-item p {
+            font-size: 0.95rem;
+            color: #bbb;
+        }
+        .footer-info-section {
+            padding: 40px 0;
+            background-color: #f1f1f1;
+            border-top: 1px solid #e0e0e0;
+        }
+        .info-block {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #007bff;
+            background-color: #e9f7ff;
+            border-radius: 4px;
+        }
+        .info-block p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767.98px) {
+            .hero-placeholder {
+                min-height: 120px;
+            }
+            .pricing-card {
+                padding: 20px;
+            }
+            .pricing-card .price {
+                font-size: 2rem;
+            }
+            .contact-section {
+                padding: 40px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">SnapEdit Pro</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>  <!-- Hero Section -->  <section class="hero">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Enhance Your Photos with AI</h1>
-      <p class="lead">SnapEdit Pro transforms your images using smart AI-powered enhancements. Perfect for photographers, designers, and social media creators.</p>
-      <a href="#pricing" class="btn btn-primary btn-lg mt-3">Get Started</a>
-    </div>
-  </section>  <!-- Features Section -->  <section id="features" class="py-5">
-    <div class="container">
-      <div class="row text-center mb-4">
-        <h2 class="fw-bold">Why Choose SnapEdit Pro?</h2>
-      </div>
-      <div class="row g-4 text-center">
-        <div class="col-md-4">
-          <div class="feature-icon mb-2">📸</div>
-          <h5>AI Auto Enhancement</h5>
-          <p>One-click photo optimization with professional-level results.</p>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-icon mb-2">🎨</div>
-          <h5>Style Filters</h5>
-          <p>Apply aesthetic filters and color grading to match your brand.</p>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-icon mb-2">☁️</div>
-          <h5>Cloud Storage</h5>
-          <p>Save and organize your edits securely in the cloud.</p>
-        </div>
-      </div>
-    </div>
-  </section>  <!-- Pricing Section -->  <section id="pricing" class="py-5 bg-light">
-    <div class="container">
-      <div class="row text-center mb-4">
-        <h2 class="fw-bold">Choose Your Plan</h2>
-        <p class="text-muted">Flexible pricing to suit everyone.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card pricing-card p-4">
-            <h5 class="fw-bold text-center">Free</h5>
-            <h2 class="text-center">$0<span class="fs-6">/mo</span></h2>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>✓ Basic AI enhancement</li>
-              <li>✓ 10 photo exports/month</li>
-              <li>✗ No cloud storage</li>
-            </ul>
-            <div class="d-grid">
-              <button class="btn btn-outline-primary">Try Free</button>
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/30x30?text=Logo" alt="Logo" class="d-inline-block align-text-top me-2">
+                Digital Services
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card pricing-card p-4 border-primary border-2">
-            <h5 class="fw-bold text-center text-primary">Pro</h5>
-            <h2 class="text-center">$9.99<span class="fs-6">/mo</span></h2>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>✓ Unlimited enhancements</li>
-              <li>✓ 100 photo exports/month</li>
-              <li>✓ 20 GB cloud storage</li>
-            </ul>
-            <div class="d-grid">
-              <button class="btn btn-primary">Get Pro</button>
-            </div>
-          </div>
+    </nav>
+
+    <header class="header-section">
+        <div class="container">
+            <h1>Example: Pricing</h1>
+            <p>An example wireframe showing pricing and features for Digital Marketing Services.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card pricing-card p-4">
-            <h5 class="fw-bold text-center">Team</h5>
-            <h2 class="text-center">$29.99<span class="fs-6">/mo</span></h2>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>✓ All Pro features</li>
-              <li>✓ Up to 5 users</li>
-              <li>✓ Priority support</li>
-            </ul>
-            <div class="d-grid">
-              <button class="btn btn-outline-primary">Start Team Plan</button>
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="hero-placeholder">Desktop</div>
             </div>
-          </div>
+            <div class="col-12 col-md-4">
+                <div class="hero-placeholder">Tablet</div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="hero-placeholder">Phone</div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>  <!-- Contact Section -->  <section id="contact" class="py-5">
-    <div class="container">
-      <div class="row mb-4 text-center">
-        <h2 class="fw-bold">Get in Touch</h2>
-        <p class="text-muted">Have questions or need support? We're here to help.</p>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form id="contactForm">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required />
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="h4 text-muted">Rapid Campaign Setup for Digital Marketing</p>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>  <!-- Footer -->  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 SnapEdit Pro. All rights reserved.</p>
-  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  <script>
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Thank you for contacting us, ' + document.getElementById('name').value + '!');
-      this.reset();
-    });
-  </script></body>
+    </section>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$25</div>
+                    <ul class="list-unstyled">
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> 5 Keyword Campaigns</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Basic SEO Audit</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Social Media Integration</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Monthly Performance Report</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Email Support</li>
+                    </ul>
+                    <button class="btn btn-choose" id="basicPlanBtn">Choose Basic Plan</button>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="pricing-card">
+                    <h3>Standard</h3>
+                    <div class="price">$50</div>
+                    <ul class="list-unstyled">
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> 15 Keyword Campaigns</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Comprehensive SEO Audit</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Advanced Social Media Mgmt.</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Weekly Performance Reports</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Priority Email Support</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Basic Content Creation</li>
+                    </ul>
+                    <button class="btn btn-choose" id="standardPlanBtn">Choose Standard Plan</button>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="pricing-card">
+                    <h3>Pro</h3>
+                    <div class="price">$75</div>
+                    <ul class="list-unstyled">
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Unlimited Keyword Campaigns</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> In-depth SEO Strategy</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Full Social Media Management</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Daily Performance Reports</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Dedicated Account Manager</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> Advanced Content Creation</li>
+                        <li><img src="https://via.placeholder.com/20x20?text=✓" alt="check" class="me-2"> A/B Testing & Optimization</li>
+                    </ul>
+                    <button class="btn btn-choose" id="proPlanBtn">Choose Pro Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section text-center">
+        <div class="container">
+            <h2>We'd Love to Hear From You</h2>
+            <div class="row my-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="contact-item">
+                        <div class="contact-icon-placeholder">✉</div>
+                        <p>Email Us: <a href="mailto:info@digitalmarketing.com" class="text-white text-decoration-none">info@digitalmarketing.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="contact-item">
+                        <div class="contact-icon-placeholder">📞</div>
+                        <p>Call Us: <a href="tel:+1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-item">
+                        <div class="contact-icon-placeholder">📍</div>
+                        <p>Visit Us: 123 Marketing Ave, Suite 456, City, Country</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your Email Address">
+                        <button type="submit" class="btn btn-success">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="info-block">
+                        <p>
+                            <strong>1. Comprehensive SEO Strategies:</strong> We craft bespoke SEO strategies tailored to your business goals, ensuring maximum visibility and organic traffic growth. Our methods include advanced keyword research, on-page optimization, technical SEO audits, and high-quality link building.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="info-block">
+                        <p>
+                            <strong>2. Engaging Content Marketing:</strong> Our team specializes in creating compelling and valuable content that resonates with your target audience. From blog posts and articles to video scripts and infographics, we produce content that drives engagement and conversions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-block">
+                        <p>
+                            <strong>3. Targeted Social Media Campaigns:</strong> We manage your social media presence across various platforms, developing targeted campaigns that increase brand awareness, foster community engagement, and generate leads. We focus on platforms where your audience is most active.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-block">
+                        <p>
+                            <strong>4. Performance Analytics & Reporting:</strong> Transparency is key. We provide detailed performance analytics and regular reports, giving you insights into your campaign's effectiveness. We continuously monitor KPIs to optimize strategies for better ROI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Simple JavaScript for button interaction
+        document.getElementById('basicPlanBtn').addEventListener('click', function() {
+            alert('You have chosen the Basic Digital Marketing Plan!');
+            this.textContent = 'Plan Selected!';
+            this.disabled = true;
+        });
+
+        document.getElementById('standardPlanBtn').addEventListener('click', function() {
+            alert('You have chosen the Standard Digital Marketing Plan!');
+            this.textContent = 'Plan Selected!';
+            this.disabled = true;
+        });
+
+        document.getElementById('proPlanBtn').addEventListener('click', function() {
+            alert('You have chosen the Pro Digital Marketing Plan!');
+            this.textContent = 'Plan Selected!';
+            this.disabled = true;
+        });
+    </script>
+</body>
 </html>
