@@ -1,121 +1,161 @@
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Resume - Jude Benedick G. Gamis</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
- </head>
- <body class="bg-[#f0f0f0]">
-  <div class="max-w-5xl mx-auto bg-white shadow-md">
-   <header class="bg-[#323c4f] text-white flex flex-col md:flex-row items-center md:items-center md:justify-between px-6 py-8 md:py-10">
-    <div class="hidden md:block w-24 h-24 rounded-full overflow-hidden">
-     <img alt="Jude Benedick G. Gamis" class="w-full h-full object-cover" height="96" src="jude.png" />
-    </div>
-    <div class="text-center md:text-left md:flex-1 md:ml-6">
-     <h1 class="font-extrabold text-2xl md:text-3xl tracking-wide">JUDE BENEDICK G. GAMIS</h1>
-     <p class="mt-1 text-sm md:text-base font-light tracking-wide">ARTIST &amp; GAMER</p>
-    </div>
-    <div class="md:hidden flex justify-center mb-6">
-     <div class="w-24 h-24 rounded-full overflow-hidden">
-      <img alt="Jude Benedick G. Gamis" class="w-full h-full object-cover" height="96" src="C:\Users\202411007\Pictures\Screenshots\Screenshot 2025-05-03 082119.png" width="96" />
-     </div>
-    </div>
-   </header>
-   <main class="flex flex-col md:flex-row">
-    <aside class="bg-[#e6e7e8] w-full md:w-80 p-6 md:p-8 space-y-10">
-     <section>
-      <h2 class="text-[#323c4f] font-semibold text-lg tracking-widest border-b border-[#323c4f] pb-1 mb-4">CONTACT</h2>
-      <ul class="space-y-3 text-sm text-[#323c4f]">
-       <li class="flex items-center space-x-3"><i class="fas fa-phone-alt text-[#323c4f]"></i><span>09670262342</span></li>
-       <li class="flex items-center space-x-3"><i class="fas fa-envelope text-[#323c4f]"></i><span>judegamis12@gmail.com</span></li>
-       <li class="flex items-start space-x-3"><i class="fas fa-map-marker-alt mt-[3px] text-[#323c4f]"></i><span>1062 Villa Raymundo Palativ Pasig City</span></li>
-      </ul>
-     </section>
-     <section>
-      <h2 class="text-[#323c4f] font-semibold text-lg tracking-widest border-b border-[#323c4f] pb-1 mb-4">SKILLS</h2>
-      <ul class="list-disc list-inside text-sm text-[#323c4f] space-y-1">
-       <li>Project Management</li>
-       <li>Public Relations</li>
-       <li>Teamwork</li>
-       <li>Time Management</li>
-       <li>Leadership</li>
-       <li>Effective Communication</li>
-       <li>Critical Thinking</li>
-       <li>Investor</li>
-      </ul>
-     </section>
-     <section>
-      <h2 class="text-[#323c4f] font-semibold text-lg tracking-widest border-b border-[#323c4f] pb-1 mb-4">LANGUAGES</h2>
-      <ul class="list-disc list-inside text-sm text-[#323c4f] space-y-1">
-       <li>English (Basic)</li>
-       <li>Tagalog (Fluent)</li>
-      </ul>
-     </section>
-    </aside>
-    <section class="flex-1 p-6 md:p-10 text-[#323c4f]">
-     <div class="space-y-12">
-      <div class="relative pl-12">
-       <div class="absolute left-0 top-0 flex flex-col items-center">
-        <div class="bg-[#323c4f] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="fas fa-user"></i></div>
-        <div class="w-px h-full border-l border-[#323c4f]"></div>
-       </div>
-       <h3 class="font-semibold text-lg tracking-widest border-b border-[#323c4f] pb-1 mb-3">PROFILE</h3>
-       <p class="text-sm leading-relaxed">
-        A hard worker with a passion for animation and game development,
-        driven by the determination to pursue his dream of working in a
-        collaborative and dynamic environment. Adaptable to various
-        working conditions, thorough and precise in completing tasks
-        effectively. Possesses extensive experience in managing both
-        animation and game development teams
-       </p>
-      </div>
-      <div class="relative pl-12">
-       <div class="absolute left-0 top-0 flex flex-col items-center">
-        <div class="bg-[#323c4f] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="fas fa-briefcase"></i></div>
-        <div class="w-px h-full border-l border-[#323c4f]"></div>
-       </div>
-       <h3 class="font-semibold text-lg tracking-widest border-b border-[#323c4f] pb-1 mb-6">HOBBIES</h3>
-       <div class="mb-6">
-        <div class="flex justify-between text-sm mb-1"><span class="font-bold">ARTIST</span><span>PRESENT</span></div>
-        <ul class="list-disc list-inside text-sm space-y-1">
-         <li>Develop and execute precise animation and campaigns that align with the company’s goals and objectives.</li>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnapEdit Pro - AI Photo Enhancer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .pricing-card {
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+    .pricing-card:hover {
+      transform: translateY(-10px);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">SnapEdit Pro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-       </div>
-       <div class="mb-6">
-        <div class="flex justify-between text-sm mb-1"><span class="font-bold">GAMER</span><span>PRESENT</span></div>
-        <ul class="list-disc list-inside text-sm space-y-1">
-         <li>PLAYS GAMES IN ROBLOX AND MANY MORE OTHER GAMES</li>
-        </ul>
-       </div>
       </div>
-      <div class="relative pl-12">
-       <div class="absolute left-0 top-0 flex flex-col items-center">
-        <div class="bg-[#323c4f] text-white rounded-full w-8 h-8 flex items-center justify-center"><i class="fas fa-graduation-cap"></i></div>
-        <div class="w-px h-full border-l border-[#323c4f]"></div>
-       </div>
-       <h3 class="font-semibold text-lg tracking-widest border-b border-[#323c4f] pb-1 mb-6">EDUCATION</h3>
-       <div class="mb-6">
-        <div class="flex justify-between text-sm mb-1"><span class="font-bold">FEU Institute of Technology</span><span>2024-2029</span></div>
-        <p class="text-xs mb-1">Bachelor of Science in Information Technology Major in Animation and Game Developer</p>
-        <p class="font-bold text-sm">GPA: <span class="font-normal">2.5</span></p>
-       </div>
-       <div>
-        <div class="flex justify-between text-sm mb-1"><span class="font-bold">Pasig Catholic College</span><span>2025 - 2023</span></div>
-        <p class="text-xs mb-1">Senior High School and Junior High School</p>
-        <p class="font-bold text-sm">Grade: <span class="font-normal">85</span></p>
-       </div>
+    </div>
+  </nav>  <!-- Hero Section -->  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Enhance Your Photos with AI</h1>
+      <p class="lead">SnapEdit Pro transforms your images using smart AI-powered enhancements. Perfect for photographers, designers, and social media creators.</p>
+      <a href="#pricing" class="btn btn-primary btn-lg mt-3">Get Started</a>
+    </div>
+  </section>  <!-- Features Section -->  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <h2 class="fw-bold">Why Choose SnapEdit Pro?</h2>
       </div>
-     </div>
-    </section>
-   </main>
-  </div>
- </body>
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="feature-icon mb-2">📸</div>
+          <h5>AI Auto Enhancement</h5>
+          <p>One-click photo optimization with professional-level results.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon mb-2">🎨</div>
+          <h5>Style Filters</h5>
+          <p>Apply aesthetic filters and color grading to match your brand.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon mb-2">☁️</div>
+          <h5>Cloud Storage</h5>
+          <p>Save and organize your edits securely in the cloud.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Pricing Section -->  <section id="pricing" class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <h2 class="fw-bold">Choose Your Plan</h2>
+        <p class="text-muted">Flexible pricing to suit everyone.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card pricing-card p-4">
+            <h5 class="fw-bold text-center">Free</h5>
+            <h2 class="text-center">$0<span class="fs-6">/mo</span></h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>✓ Basic AI enhancement</li>
+              <li>✓ 10 photo exports/month</li>
+              <li>✗ No cloud storage</li>
+            </ul>
+            <div class="d-grid">
+              <button class="btn btn-outline-primary">Try Free</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card pricing-card p-4 border-primary border-2">
+            <h5 class="fw-bold text-center text-primary">Pro</h5>
+            <h2 class="text-center">$9.99<span class="fs-6">/mo</span></h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>✓ Unlimited enhancements</li>
+              <li>✓ 100 photo exports/month</li>
+              <li>✓ 20 GB cloud storage</li>
+            </ul>
+            <div class="d-grid">
+              <button class="btn btn-primary">Get Pro</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card pricing-card p-4">
+            <h5 class="fw-bold text-center">Team</h5>
+            <h2 class="text-center">$29.99<span class="fs-6">/mo</span></h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>✓ All Pro features</li>
+              <li>✓ Up to 5 users</li>
+              <li>✓ Priority support</li>
+            </ul>
+            <div class="d-grid">
+              <button class="btn btn-outline-primary">Start Team Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Contact Section -->  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row mb-4 text-center">
+        <h2 class="fw-bold">Get in Touch</h2>
+        <p class="text-muted">Have questions or need support? We're here to help.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Footer -->  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 SnapEdit Pro. All rights reserved.</p>
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for contacting us, ' + document.getElementById('name').value + '!');
+      this.reset();
+    });
+  </script></body>
 </html>
